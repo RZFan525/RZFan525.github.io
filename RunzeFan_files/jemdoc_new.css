@@ -1,0 +1,39 @@
+.navbar {
+	background-color: #e6eaf4;
+	border-color: #dfe3ef;
+	color: #444;
+}
+
+.navbar a { color: inherit; } 
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.my-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-bottom: 1px solid #e8e8e8;
+ }
+#Publications:target,#Background:target,#Shared:target,#Service:target,#Talks:target,#Honors:target{
+  padding-top:80px;
+}
+
+.navbar-nav > li > a:hover{
+				background: #337ab7 ;
+				color: white;
+			}

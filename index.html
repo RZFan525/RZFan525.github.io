@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0035)https://bcmi.sjtu.edu.cn/~zhangzs/# -->
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=7.0000" http-equiv="X-UA-Compatible">
+<title>Run-Ze Fan</title>
+<meta name="keywords" content="Run-Ze Fan">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="RunzeFan_files/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="RunzeFan_files/jemdoc_new.css"><link rel="shortcut icon" href="https://bcmi.sjtu.edu.cn/~zhangzs/rui.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+<meta name="GENERATOR" content="MSHTML 11.00.9600.17280"><link href="https://ydlunacommon-cdn.nosdn.127.net/0903d3c0bd4ab1a7e5d61c29b459b83b.svg" rel="preload" as="image"><link href="https://ydlunacommon-cdn.nosdn.127.net/1fcf50513b6d47e71b13e9388f709b3d.svg" rel="preload" as="image"></head>
+<body style="font-family:Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px; padding-top: 80px" data-new-gr-c-s-check-loaded="14.1168.0" data-gr-ext-installed=""><nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="navbar-header my-nav">
+            <a class="navbar-brand" style="margin-left: 10px" href>Run-Ze Fan</a>
+          </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse" style="max-height: 435px; transition: max-height 0.15s ease-out;">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#Publications">Publications</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+              <li><a href="#Service">Service</a></li>
+            <li><a href="#Honors">Honors</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+<div class="container body-content">
+<div class="col-6">
+<p>
+<!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="RunzeFan_files/jquery(1).min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script async="" defer="" src="RunzeFan_files/buttons.js"></script>
+<script src="RunzeFan_files/jquery.scrollUp.js"></script>
+
+<script type="text/javascript">
+  
+var a = document.querySelector(".navbar-toggle");
+    $(".navbar-nav li a").on("click",function () {
+        a.click();
+    });
+
+// Toggle Display of BibTeX
+function toggleBibtex(articleid) {
+  var bib = document.getElementById(articleid);
+  // Toggle 
+    if(bib.style.display == "none") {
+      var x = document.getElementsByClassName("blockcontent");
+      var i;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      bib.style.display = "";
+    }
+    else {
+      bib.style.display = "none";
+    }
+
+}
+
+function showall(){  
+    var items = document.getElementsByClassName('coauthor');
+    if(document.getElementById("list_type").text == "Full list"){
+        document.getElementById("list_type").text = "Selected";
+        for (i = 0; i < items.length; ++i)
+            {
+                items[i].style.display = 'block';
+            }
+    }else{
+        document.getElementById("list_type").text = "Full list";
+        for (i = 0; i < items.length; ++i)
+            {
+                items[i].style.display = 'none';
+            }
+    }
+    
+}
+</script>
+
+<script>
+$(function () {
+    $.scrollUp({
+        animation: 'fade',
+        scrollImg: {
+            active: true,
+            type: 'background',
+            src: 'imgs/top.png'
+        }
+    });
+});
+$('#scrollUpTheme').attr('href', 'image.css?1.1');
+$('.image-switch').addClass('active');
+
+</script>
+
+<style type="text/css">
+a {
+	TEXT-DECORATION: none; COLOR: #224b8d
+}
+H2 {
+	MARGIN-BOTTOM: 0.3em;
+	BORDER-BOTTOM: #aaaaaa 1px solid;
+	PADDING-BOTTOM: 0.2em;
+	PADDING-TOP: 0.5em;
+	MARGIN-TOP: 0.7em;
+	LINE-HEIGHT: 1;
+}
+#scrollUp {
+    background-image: url("imgs/top.png");
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
+}
+DIV.blockcontent {
+	BORDER-TOP: silver 1px solid; BORDER-RIGHT: silver 1px solid; BORDER-BOTTOM: silver 1px solid; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em; PADDING-LEFT: 0.5em; BORDER-LEFT: silver 1px solid; PADDING-RIGHT: 0.5em
+}
+pre{
+border:0px;
+background-color: #fff
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1000px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 360;
+    line-height: 1.1;
+    color: inherit;
+}
+
+</style>
+
+</p>
+<p></p>
+
+<div class="row">
+<div class="col-sm-4">
+<img class="img-responsive" style="max-height:220px;" src="RunzeFan_files/frz.jpg">
+</div>
+
+<div class="col-sm-8">
+<div class="clearfix visible-xs-block"></div>
+<h1>Run-Ze Fan</h1>
+
+<p style="font-size: 18px">Master Student<br>
+Institute of Computing Technology<br>
+University of Chinese Academy of Sciences<br>
+<b>Email</b>: <tt>runze.fan@icloud.com</tt> <br>
+<!--<b>Office</b>: School of Software 5213 <br>-->
+<!--800 Dongchuan Road, Shanghai-->
+
+</p><div class="col-sm-10" style="padding-left:0px">
+<div class="col-xs-2" style="padding-left:0px">
+<a href="https://twitter.com/Vfrz525_" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:30px;"></i></a>
+</div>
+<div class="col-xs-2" style="padding-left:0px">
+<a href="https://scholar.google.com/citations?user=mhot7AUAAAAJ&hl=en" target="_blank" rel="noopener"><i class="ai ai-google-scholar big-icon" style=" font-size:30px;"></i></a>
+</div>
+<div class="col-xs-2" style="padding-left:0px">
+<a href="https://github.com/RZFan525" target="_blank" rel="noopener"><i class="fab fa-github big-icon" style=" font-size:30px;"></i></a>
+</div>
+<div class="col-xs-2" style="padding-left:0px">
+<a href="https://www.zhihu.com/people/vfrz" target="_blank" rel="noopener"><img src="RunzeFan_files/zhihu.ico" height="30" alt="zhihu"></a>
+</div>
+<div class="col-xs-2" style="padding-left:0px">
+<!--<a href="cv_zzs.pdf" target="_blank" rel="noopener"><i class="ai ai-cv big-icon big-icon" style=" font-size:30px;"></i></a>-->
+</div>
+</div>
+<p></p>
+</div>
+</div>
+
+<h2>Profile 
+<!-- <a href="cv_zhangzhuosheng.pdf">[Curriculum Vitae]</a> -->
+</h2>
+              <p style="text-align:justify; text-justify:inter-ideograph;">I am a final-year master's student in Computer Science at <a href="http://www.ict.ac.cn/" target="_blank">Institute of Computing Technology (ICT) of Chinese Academy of Sciences (CAS) </a> supervised by <a href="https://scholar.google.com/citations?user=nD0I3PUAAAAJ&hl=en&oi=ao" target="_blank">Prof. Jiafeng Guo</a>. I am currently working with <a href="https://pfliu.com/" target="_blank">Dr. Pengfei Liu</a> at <a href="https://plms.ai/index.html" target="_blank">Generative AI Research Lab (GAIR)</a> to explore Generative AI. Before that, I received the B.E. degree in computer science and technology from <a href="https://www.shmtu.edu.cn/" target="_blank">Shanghai Maritime University (SHMTU)</a> in 2021.
+              </p>
+    <b class="alert-heading">Research Interests:</b> My primary research interests include natural language processing, large language models, and machine learning. Specifically, My current research focuses:
+    <div>
+	<ul>
+    <li>Alignment in large language models.</li>
+    <li>Super Alignment in AI.</li>
+    <li>Reasoning ability of AI.</li>
+    </ul>
+        </div>
+
+<!--<br><br>-->
+<p style="text-align:justify; text-justify:inter-ideograph;"> I am happy to collaborate and/or answer questions about my research. If you are interested in research collaboration or have any inquiries about my experience, please send me an email. </p>
+<!--<br><br>-->
+
+<!--<font color="red">目前计划招收2025年秋季入学博士生1名和硕士生1-2名，欢迎邮件联系。</font><br>-->
+
+
+ <!--
+<h2>RESEARCH INTEREST</h2>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Natural Language Understanding, Question Answering and Machine Reading Comprehension
+-->
+<H2 id="News">News</H2>
+ <div>
+<UL>
+<LI>2024.01: <a href="https://arxiv.org/abs/2310.05470" target="_blank" rel="noopener">Auto-J</a> have been accepted by ICLR2024.</LI>
+<LI>2023.12: <a href="https://arxiv.org/abs/2312.10466" target="_blank" rel="noopener">RIGHT</a> have been accepted by ECIR2024.</LI>
+<LI>2023.10: <a href="https://arxiv.org/abs/2310.09832" target="_blank" rel="noopener">MEO</a> have been accepted by EMNLP2023 Main Conference <b>(Oral)</b>.</LI>
+
+
+</UL>
+</div>
+
+
+<!--<h2 id="Talks">Tutorials</h2>-->
+<!--<div>-->
+<!--	<ul>-->
+<!--   <li>CVPR 2024: <b style="color: #224b8d"> From Multimodal LLM to Human-level AI: Modality, Instruction, Reasoning and Beyond</b><br>-->
+<!--      Hao Fei, Yuan Yao, Ao Zhang, Haotian Liu, Fuxiao Liu, Zhuosheng Zhang, Shuicheng Yan.<br>-->
+<!--      Seattle WA, USA-->
+<!--    </li> -->
+<!--   <li>LREC-COLING 2024: <b style="color: #224b8d"> From Multimodal LLM to Human-level AI: Modality, Instruction, Reasoning, Efficiency and Beyond</b><br>-->
+<!--      Hao Fei, Yuan Yao, Zhuosheng Zhang, Fuxiao Liu, Ao Zhang, Tat-Seng Chua.<br>-->
+<!--      Torino, Italia-->
+<!--    </li> -->
+<!--   <li>IJCNLP-AACL 2023: <b style="color: #224b8d"> Learning WHO Saying WHAT to WHOM in Multi-Party Conversations</b><br>-->
+<!--      Jia-Chen Gu, Zhuosheng Zhang, and Zhen-Hua Ling. <a href="https://aclanthology.org/2023.ijcnlp-tutorials.5.pdf" target="_blank" rel="noopener">[Abstract]</a><br>-->
+<!--      Bali, Indonesia.-->
+<!--    </li>-->
+<!--   <li>IJCAI 2021: <b style="color: #224b8d"> Machine Reading Comprehension: The Role of Contextualized Language Models and Beyond</b><br>-->
+<!--      Zhuosheng Zhang and Hai Zhao. <a href="http://bcmi.sjtu.edu.cn/~zhangzs/slides/IJCAI21_TT_MRC.pdf" target="_blank" rel="noopener">[slides]</a><br>-->
+<!--      Montreal, Canada (Virtual)-->
+<!--    </li>-->
+<!--    <li>For Beginners: <b style="color: #224b8d">Dive into LLMs《动手学大模型》系列编程实践教程</b> <a href="https://github.com/Lordog/dive-into-llms" target="_blank" rel="noopener">[GitHub]</a><br>-->
+<!--   </li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<!--<h2>Talks</h2>-->
+<!--<div>-->
+<!--<ul>     <li>-->
+<!--                2023/11: Keynote "Autonomous Language Agents" at <a href="https://liip.kust.edu.cn//CJNLP2023/index.html" target="_blank" rel="noopener">CJNLP 2023</a>.-->
+<!--         </li>   -->
+<!--        <li>-->
+<!--                2023/09: Talk "Autonomous Language Agents" at MNNLP 2023. <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/Auto-UI.pdf" target="_blank" rel="noopener">[slides]</a>-->
+<!--         </li>     -->
+<!--         <li>-->
+<!--                2023/03: Talk "Chain-of-Thought Reasoning In Language Models" at WestlakeNLP, FudanNLP, and Bytedance. <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/CoT-zhuosheng.pdf" target="_blank" rel="noopener">[slides]</a>-->
+<!--         </li>-->
+<!--         <li>-->
+<!--                2022/12: Talk "Automatic Chain of Thought Prompting in Large Language Models" at Amazon AWS. <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/AutoCoT-Zhuosheng.pdf" target="_blank" rel="noopener">[slides]</a>-->
+<!--         </li>-->
+<!--		 <li>-->
+<!--                2022/07: Talk "Large-scale Multi-task Pre-training" at Tencent AI Lab. <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/ailab-mtl.pdf" target="_blank" rel="noopener">[slides]</a>-->
+<!--         </li>-->
+<!--         <li>-->
+<!--                2022/06: Talk "Large-scale Multi-task Pre-training" at Microsoft Research. <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/msr-mtl.pdf" target="_blank" rel="noopener">[slides]</a>-->
+<!--         </li>-->
+<!--         <li>-->
+<!--                2021/11: Talk "Mengzi Lightweight Pre-trained Models" at <a href="https://event.baai.ac.cn/activities/190" target="_blank" rel="noopener">Big Model Meetup</a>, with Dr. <a style="color:#005580" href="https://scholar.google.co.jp/citations?user=a0w5c0gAAAAJ" target="_blank" rel="noopener">Ming Zhou</a>. <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/SMP-Mengzi.pdf" target="_blank" rel="noopener">[slides]</a>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                2021/11: Talk "Machine Reading Comprehension: The Paradigm of Pre-trained Models" at <a href="https://mp.weixin.qq.com/s/j9fSGI1dLy1GXY3GMPXrkg" target="_blank" rel="noopener">MLNLP 2021</a>.-->
+<!--                <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/MLNLP2021-MRC.pdf" target="_blank" rel="noopener">[slides]</a></li>-->
+<!--              -->
+<!--        <li>-->
+<!--                2021/07: Talk "Machine Reading Comprehension and Dialogue Systems" at Huawei Shanghai Institute. <a href="https://bcmi.sjtu.edu.cn/~zhangzs/slides/huawei-mrc.pdf" target="_blank" rel="noopener">[slides]</a>-->
+<!--              </li>-->
+<!--        <li>-->
+<!--                2020/10: Talk "My Way to Reading Comprehension: Self-cognition and Persistence" at -->
+<!--                <a href="http://cips-cl.org/static/CCL2020/stu-discuss.html" target="_blank" rel="noopener">CCL 2020 Student Workshop</a>.-->
+<!--               <a href="http://bcmi.sjtu.edu.cn/~zhangzs/slides/CCL2020_SW.pdf" target="_blank" rel="noopener">[slides]</a></li>-->
+<!--              <li>-->
+<!--                2020/05: Talk "Machine Reading Comprehension: The Role of Contextualized Language Models and Beyond" at UofA NLP seminar on MRC.-->
+<!--                <a href="http://bcmi.sjtu.edu.cn/~zhangzs/slides/mrc_seminar.pdf" target="_blank" rel="noopener">[slides]</a></li>-->
+<!--               <li>-->
+<!--               2017/10: Talk "Fine-grained Embedding for Reading Comprehension" at <a href="https://hfl-rc.github.io/cmrc2017/" target="_blank" rel="noopener">CMRC 2017 workshop in CCL 2017</a>.-->
+<!--                <a href="http://bcmi.sjtu.edu.cn/~zhangzs/slides/CMRC2017_SJTU-BCMI.pdf" target="_blank" rel="noopener">[slides]</a></li>       -->
+<!--</ul>-->
+<!--</div>-->
+
+
+<div id="publication" class="field" style="">
+<div class="blank"></div>
+<h2 id="Publications">Publications</h2>
+<!-- Discover the <b><a href="https://bcmi.sjtu.edu.cn/~zhangzs/pub.html" style="color:#005580">full list</a></b> | -->
+<a href="https://scholar.google.com/citations?user=mhot7AUAAAAJ&hl=en" target="_blank"><img src="RunzeFan_files/google_scholar.png" height="20" alt="google scholar"></a> |
+<a href="https://www.semanticscholar.org/author/Run-Ze-Fan/1657674644" target="_blank"><img src="RunzeFan_files/semantic_scholar_logo.png" height="20" alt="semantic scholar"></a> |
+<a href="https://dblp.org/pid/355/5702.html" target="_blank"> <img src="RunzeFan_files/dblp_logo.png" height="22" alt="dblp"></a><br>
+    <i>(* indicates equal contribution)</i>
+<ul>
+    <li>
+    <b style="color: #224b8d">Reformatted Alignment</b><br>
+        <b>Run-Ze Fan</b>, Xuefeng Li, Haoyang Zou, Junlong Li, Shwai He, Ethan Chern, Jiewen Hu, Pengfei Liu.<br>
+      arXiv, 2024<br>
+<!--      <font color="#A6192E">"Merely by reformatting the response, LLMs' performance improves significantly (e.g. LLaMA-2-13B on GSM8K: 46% -> 56%)."</font> <a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>-->
+      [<a href="https://arxiv.org/abs/2402.12219" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;ReAlign_abs&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;ReAlign_bib&#39;)" target="_self">Bib</a>]
+      [<a href="https://github.com/GAIR-NLP/ReAlign" target="_blank">Code</a>]
+        [<a href="https://gair-nlp.github.io/ReAlign/" target="_blank">Page</a>]
+        [<a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank">Featured by AK</a>]
+        [<a href="https://mp.weixin.qq.com/s/iIy8t27uo-DFJKEV0TK7Zg" target="_blank">量子位</a>]
+      <br>
+      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/GAIR-NLP/ReAlign" target="_blank" rel="noopener" aria-label="Star ReAlign on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>ReAlign</span></a></div></template></span></div>
+        <div id="ReAlign_abs" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+The quality of finetuning data is crucial for aligning large language models (LLMs) with human values. Current methods to improve data quality are either labor-intensive or prone to factual errors caused by LLM hallucinations. This paper explores elevating the quality of existing instruction data to better align with human values, introducing a simple and effective approach named ReAlign, which reformats the responses of instruction data into a format that better aligns with pre-established criteria and the collated evidence. This approach minimizes human annotation, hallucination, and the difficulty in scaling, remaining orthogonal to existing alignment techniques. Experimentally, ReAlign significantly boosts the general alignment ability, math reasoning, factuality, and readability of the LLMs.
+Encouragingly, without introducing any additional data or advanced training techniques, and merely by reformatting the response, LLaMA-2-13B's mathematical reasoning ability on GSM8K can be improved from 46.77% to 56.63% in accuracy. Additionally, a mere 5% of ReAlign data yields a 67% boost in general alignment ability measured by the Alpaca dataset. This work highlights the need for further research into the science and mechanistic interpretability of LLMs. We have made the associated code and data publicly accessible to support future studies at <a href="https://github.com/GAIR-NLP/ReAlign" target="_blank">https://github.com/GAIR-NLP/ReAlign</a>.                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          
+        <div id="ReAlign_bib" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{fan2024reformatted,
+      title={Reformatted Alignment},
+      author={Fan, Run-Ze and Li, Xuefeng and Zou, Haoyang and Li, Junlong and He, Shwai and Chern, Ethan and Hu, Jiewen and Liu, Pengfei},
+      year={2024},
+      journal={arXiv preprint arXiv:2402.12219},
+      url={https://arxiv.org/abs/2402.12219}
+}
+              </pre>
+       </div>
+    </li>
+</ul>
+
+<ul>
+    <li>
+    <b style="color: #224b8d">RIGHT: Retrieval-augmented Generation for Mainstream Hashtag Recommendation</b><br>
+      <b>Run-Ze Fan</b>, Yixing Fan, Jiangui Chen, Jiafeng Guo, Ruqing Zhang, Xueqi Cheng.<br>
+      ECIR, 2024<br>
+      [<a href="https://arxiv.org/abs/2312.10466" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;RIGHT_abs&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;RIGHT_bib&#39;)" target="_self">Bib</a>]
+        [<a href="https://github.com/ict-bigdatalab/RIGHT" target="_blank">Code</a>]
+      <br>
+      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/ict-bigdatalab/RIGHT" target="_blank" rel="noopener" aria-label="Star RIGHT on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>RIGHT</span></a></div></template></span></div>
+        <div id="RIGHT_abs" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Automatic mainstream hashtag recommendation aims to accurately provide users with concise and popular topical hashtags before publication. Generally, mainstream hashtag recommendation faces challenges in the comprehensive difficulty of newly posted tweets in response to new topics, and the accurate identification of mainstream hashtags beyond semantic correctness. However, previous retrieval-based methods based on a fixed predefined mainstream hashtag list excel in producing mainstream hashtags, but fail to understand the constant flow of up-to-date information. Conversely, generation-based methods demonstrate a superior ability to comprehend newly posted tweets, but their capacity is constrained to identifying mainstream hashtags without additional features. Inspired by the recent success of the retrieval-augmented technique, in this work, we attempt to adopt this framework to combine the advantages of both approaches. Meantime, with the help of the generator component, we could rethink how to further improve the quality of the retriever component at a low cost. Therefore, we propose RetrIeval-augmented Generative Mainstream HashTag Recommender (RIGHT), which consists of three components: 1) a retriever seeks relevant hashtags from the entire tweet-hashtags set; 2) a selector enhances mainstream identification by introducing global signals; and 3) a generator incorporates input tweets and selected hashtags to directly generate the desired hashtags. The experimental results show that our method achieves significant improvements over state-of-the-art baselines. Moreover, RIGHT can be easily integrated into large language models, improving the performance of ChatGPT by more than 10%.                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          
+        <div id="RIGHT_bib" class="blockcontent" style="DISPLAY: none">
+            <pre>@inproceedings{fan2024right,
+  title={RIGHT: Retrieval-Augmented Generation for Mainstream Hashtag Recommendation},
+  author={Fan, Run-Ze and Fan, Yixing and Chen, Jiangui and Guo, Jiafeng and Zhang, Ruqing and Cheng, Xueqi},
+  booktitle={European Conference on Information Retrieval},
+  pages={39--55},
+  year={2024},
+  organization={Springer},
+  url={https://link.springer.com/chapter/10.1007/978-3-031-56027-9_3}
+}
+              </pre>
+       </div>
+    </li>
+</ul>
+
+<ul>
+    <li>
+    <b style="color: #224b8d">Merging Experts into One: Improving Computational Efficiency of Mixture of Experts</b><br>
+        Shwai He, <b>Run-Ze Fan</b>, Liang Ding, Li Shen, Tianyi Zhou, Dacheng Tao.<br>
+      EMNLP, 2023 (Oral)<br>
+      [<a href="https://arxiv.org/abs/2310.09832" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;MEO_abs&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;MEO_bib&#39;)" target="_self">Bib</a>]
+        [<a href="https://github.com/Shwai-He/MEO" target="_blank">Code</a>]
+      <br>
+        <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/Shwai-He/MEO" target="_blank" rel="noopener" aria-label="Star MEO on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>MEO</span></a></div></template></span></div>
+
+        <div id="MEO_abs" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Scaling the size of language models usually leads to remarkable advancements in NLP tasks. But it often comes with a price of growing computational cost. Although a sparse Mixture of Experts (MoE) can reduce the cost by activating a small subset of parameters (e.g., one expert) for each input, its computation escalates significantly if increasing the number of activated experts, limiting its practical utility. Can we retain the advantages of adding more experts without substantially increasing the computational costs? In this paper, we first demonstrate the superiority of selecting multiple experts and then propose a computation-efficient approach called <b>Merging Experts into One (MEO)</b>, which reduces the computation cost to that of a single expert. Extensive experiments show that MEO significantly improves computational efficiency, e.g., FLOPS drops from 72.0G of vanilla MoE to 28.6G (MEO). Moreover, we propose a token-level attention block that further enhances the efficiency and performance of token-level MEO, e.g., 83.3% (MEO) vs. 82.6% (vanilla MoE) average score on the GLUE benchmark. Our code will be released upon acceptance. Code will be released at: <a href="https://github.com/Shwai-He/MEO" target="_blank">https://github.com/Shwai-He/MEO</a>.                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          
+        <div id="MEO_bib" class="blockcontent" style="DISPLAY: none">
+            <pre>@inproceedings{he-etal-2023-merging,
+    title = "Merging Experts into One: Improving Computational Efficiency of Mixture of Experts",
+    author = "He, Shwai and Fan, Run-Ze and Ding, Liang and Shen, Li and Zhou, Tianyi and Tao, Dacheng",
+    editor = "Bouamor, Houda and Pino, Juan and Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.907",
+    doi = "10.18653/v1/2023.emnlp-main.907",
+    pages = "14685--14691",
+    abstract = "Scaling the size of language models usually leads to remarkable advancements in NLP tasks. But it often comes with a price of growing computational cost. Although a sparse Mixture of Experts (MoE) can reduce the cost by activating a small subset of parameters (e.g., one expert) for each input, its computation escalates significantly if increasing the number of activated experts, limiting its practical utility. Can we retain the advantages of adding more experts without substantially increasing the computational costs? In this paper, we first demonstrate the superiority of selecting multiple experts and then propose a computation-efficient approach called \textbf{Merging Experts into One} (MEO), which reduces the computation cost to that of a single expert. Extensive experiments show that MEO significantly improves computational efficiency, e.g., FLOPS drops from 72.0G of vanilla MoE to 28.6G (MEO). Moreover, we propose a token-level attention block that further enhances the efficiency and performance of token-level MEO, e.g., 83.3{\%} (MEO) vs. 82.6{\%} (vanilla MoE) average score on the GLUE benchmark. Our code will be released upon acceptance. Code will be released at: \url{https://github.com/Shwai-He/MEO}.",
+}
+              </pre>
+       </div>
+    </li>
+</ul>
+
+<ul>
+    <li>
+    <b style="color: #224b8d">Generative Judge for Evaluating Alignment</b><br>
+      Junlong Li, Shichao Sun, Weizhe Yuan, <b>Run-Ze Fan</b>, Hai Zhao, Pengfei Liu.<br>
+      ICLR, 2024<br>
+      [<a href="https://arxiv.org/abs/2310.05470" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;Auto-J_abs&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;Auto-J_bib&#39;)" target="_self">Bib</a>]
+        [<a href="https://github.com/GAIR-NLP/auto-j" target="_blank">Code</a>]
+        [<a href="https://gair-nlp.github.io/auto-j/" target="_blank">Page</a>]
+        [<a href="https://mp.weixin.qq.com/s/YjCgSXn_aKUYKzpQrBg7BA" target="_blank">机器之心</a>]
+      <br>
+      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/GAIR-NLP/auto-j" target="_blank" rel="noopener" aria-label="Star Auto-J on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>Auto-J</span></a></div></template></span></div>
+        <div id="Auto-J_abs" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+The rapid development of Large Language Models (LLMs) has substantially expanded the range of tasks they can address. In the field of Natural Language Processing (NLP), researchers have shifted their focus from conventional NLP tasks (e.g., sequence tagging and parsing) towards tasks that revolve around aligning with human needs (e.g., brainstorming and email writing). This shift in task distribution imposes new requirements on evaluating these aligned models regarding generality (i.e., assessing performance across diverse scenarios), flexibility (i.e., examining under different protocols), and interpretability (i.e., scrutinizing models with explanations). In this paper, we propose a generative judge with 13B parameters, Auto-J, designed to address these challenges. Our model is trained on user queries and LLM-generated responses under massive real-world scenarios and accommodates diverse evaluation protocols (e.g., pairwise response comparison and single-response evaluation) with well-structured natural language critiques. To demonstrate the efficacy of our approach, we construct a new testbed covering 58 different scenarios. Experimentally, Auto-J outperforms a series of strong competitors, including both open-source and closed-source models, by a large margin. We also provide detailed analysis and case studies to further reveal the potential of our method and make a variety of resources public at this <a href="https://github.com/GAIR-NLP/auto-j" target="_blank">https://github.com/GAIR-NLP/auto-j</a>.                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          
+        <div id="Auto-J_bib" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{li2023generative,
+  title={Generative Judge for Evaluating Alignment},
+  author={Li, Junlong and Sun, Shichao and Yuan, Weizhe and Fan, Run-Ze and Zhao, Hai and Liu, Pengfei},
+  journal={arXiv preprint arXiv:2310.05470},
+  year={2023},
+  url={https://arxiv.org/abs/2310.05470}
+}
+              </pre>
+       </div>
+    </li>
+</ul>
+
+<ul>
+    <li>
+    <b style="color: #224b8d">MerA: Merging Pretrained Adapters For Few-Shot Learning</b><br>
+      Shwai He, <b>Run-Ze Fan</b>, Liang Ding, Li Shen, Tianyi Zhou, Dacheng Tao.<br>
+      arXiv, 2023<br>
+      [<a href="https://arxiv.org/abs/2308.15982" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;MerA_abs&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;MerA_bib&#39;)" target="_self">Bib</a>]
+      <br>
+<!--      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/cooelf/Auto-UI" target="_blank" rel="noopener" aria-label="Star Auto-UI on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>Auto-UI</span></a></div></template></span></div>-->
+        <div id="MerA_abs" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Adapter tuning, which updates only a few parameters, has become a mainstream method for fine-tuning pretrained language models to downstream tasks. However, it often yields subpar results in few-shot learning. AdapterFusion, which assembles pretrained adapters using composition layers tailored to specific tasks, is a possible solution but significantly increases trainable parameters and deployment costs. Despite this, our preliminary study reveals that even single adapters can outperform Adapterfusion in few-shot learning, urging us to propose <b>Merging Pretrained Adapters (MerA)</b> that efficiently incorporates pretrained adapters to a single model through model fusion. Extensive experiments on two PLMs demonstrate that MerA achieves substantial improvements compared to both single adapters and AdapterFusion. To further enhance the capacity of MerA, we also introduce a simple yet effective technique, referred to as the "same-track" setting, that merges adapters from the same track of pretraining tasks. With the implementation of the "same-track" setting, we observe even more impressive gains, surpassing the performance of both full fine-tuning and adapter tuning by a substantial margin, e.g., 3.5% in MRPC and 5.0% in MNLI.                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          
+        <div id="MerA_bib" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{he2023mera,
+  title={Mera: Merging pretrained adapters for few-shot learning},
+  author={He, Shwai and Fan, Run-Ze and Ding, Liang and Shen, Li and Zhou, Tianyi and Tao, Dacheng},
+  journal={arXiv preprint arXiv:2308.15982},
+  year={2023},
+  url={https://arxiv.org/abs/2308.15982}
+}
+              </pre>
+       </div>
+    </li>
+</ul>
+
+<h2 id="Education">Education &amp; Research Experience</h2>
+<div>
+<ul>
+<li> <p><b>Shanghai Jiao Tong University</b>, 2023.06 - Present <br>
+    <a href="https://plms.ai/index.html" target="_blank">Generative AI Research Lab (GAIR)</a><br>
+    Research assistant, supervised by <a href="https://pfliu.com/" target="_blank">Dr. Pengfei Liu</a>.
+    </p>
+</li>
+<li><p><b>University of Chinese Academy of Sciences</b>, 2021.09 - 2024.07 <br>
+    Institute of Computing Technology<br>
+    M.S. in Computer Science and Technology, supervised by <a href="https://scholar.google.com/citations?user=nD0I3PUAAAAJ&hl=en&oi=ao" target="_blank">Prof. Jiafeng Guo</a>.
+</p></li>
+<li><p><b>Shanghai Maritime University</b>, 2017.09 - 2021.07 <br>
+    B.E. in Computer Science and Technology
+</p></li>
+</ul>
+</div>
+
+<h2 id="Blogs">Blogs</h2>
+<div>
+	<ul>
+        <li>2022-04-08: <a href="https://mp.weixin.qq.com/s/lL950H9T7UFsJRopuWQ59w" target="_blank">信息抽取新SOTA！首个结构化生成式信息抽取预训练模型，一统信息抽取四大任务</a>
+    </li>
+</ul>
+</div>
+
+<!--<h2 id="Shared">Shared Tasks</h2>-->
+<!--&lt;!&ndash; <p>(*: as the first accomplisher) </p> &ndash;&gt;-->
+<!--<b style="color: #224b8d">[May 2022] HellaSwag Leaderboard on Commonsense Reasoning </b> <br>-->
+
+<!--<ul> -->
+<!--<li>The <b>best</b> among all submissions.</li>-->
+<!--[<a href="https://leaderboard.allenai.org/hellaswag/submissions/public">Leaderboard</a>]-->
+<!--[<a href="https://bcmi.sjtu.edu.cn/~zhangzs/#">Paper</a>]-->
+
+<!--</ul>-->
+
+<!--<b style="color: #224b8d">[January 2021] ShARC Leaderboard on Conversational Question Answering </b> <br>-->
+
+<!--<ul> -->
+<!--<li>The <b>best</b> among all submissions.</li>-->
+<!--[<a href="https://sharc-data.github.io/leaderboard.html">Leaderboard</a>]-->
+<!--[<a href="https://arxiv.org/abs/2012.14827">Paper</a>]-->
+
+<!--</ul>-->
+
+<!--<b style="color: #224b8d">[September 2020] MuTual Leaderboard on Dialogue Reasoning Challenge </b> <br>-->
+
+<!--<ul> -->
+<!--<li>The <b>best</b> among all submissions.</li>-->
+<!--[<a href="https://nealcly.github.io/MuTual-leaderboard/">Leaderboard</a>]-->
+<!--[<a href="https://arxiv.org/pdf/2009.06504">Paper</a>]-->
+
+<!--</ul>-->
+
+<!--<b style="color: #224b8d">[July 2019] SQuAD2.0 Leaderboard on Machine Reading Comprehension </b> <br>-->
+
+<!--<ul> -->
+<!--<li>The <b>best</b> models for both single and ensemble settings among all submissions (2020.01). </li>-->
+<!--<li>The <b>first</b> to surpass human benchmark on both EM and F1 scores with a single model (from 2019.07-09). </li>-->
+<!--<li>The <b>first</b> time to exceed 90% F1 score with ensemble models.-->
+<!--<br>-->
+<!--[<a href="https://rajpurkar.github.io/SQuAD-explorer/">Leaderboard</a>]-->
+<!--[<a href="http://arxiv.org/abs/1908.05147">Paper</a>]-->
+<!--[<a href="https://news.sjtu.edu.cn/zhxw/20190807/108463.html">Report</a>]-->
+<!--</li>-->
+<!--</ul>-->
+
+
+<!--<b style="color: #224b8d">[March 2019] RACE Leaderboard on Machine Reading Comprehension </b> <br>-->
+<!--<ul> -->
+<!--<li>The <b>best</b> among all submissions.</li>-->
+<!--<li>The <b>best</b> among all academic submissions.-->
+<!--<br>-->
+<!--[<a href="http://www.qizhexie.com/data/RACE_leaderboard">Leaderboard</a>]-->
+<!--[<a href="https://arxiv.org/abs/1901.09381">Paper</a>]-->
+<!--[<a href="https://baijiahao.baidu.com/s?id=1627672557977953514&amp;wfr=spider&amp;for=pc">Report</a>]-->
+<!--</li>-->
+<!--</ul>-->
+
+
+<h2 id="Honors">Selected Honors &amp; Awards</h2>
+<ul>
+<li> <p> 2021: Excellent Bachelor's Graduation Thesis, Shanghai Maritime University</p></li>
+<li> <p> 2021: Excellent Graduate, Shanghai Maritime University</p></li>
+<li> <p> 2019, 2020, 2021: First Class Scholarship, Shanghai Maritime University</p></li>
+
+</li></ul>
+
+<!--<h2 id="Service">Teaching</h2>-->
+<!--<ul style="padding-left: 40px;">-->
+<!--    <li><b>Lecturer</b>, <i>NIS3353: Artificial Intelligence Security</i><br>-->
+<!--        Undergraduate, Shanghai Jiao Tong University, Spring 2024.-->
+<!--    </li><li><b>Guest Lecturer</b>, <i>NIS8021: Frontier Technology in Natural Language Processing</i><br>-->
+<!--        Graduate, Shanghai Jiao Tong University, Fall 2023.-->
+<!--	</li></ul>-->
+
+    
+<h2 id="Service">Academic Service</h2>
+<ul>
+<li>  Reviewer:
+  <ul style="padding-left: 40px;">
+      <li>EMNLP (2023), ARR (Feb 2024, Apr 2024).
+
+ </li></ul>
+    </li></ul>
+
+<br>
+<br>
+<!-- 
+<H2 id="ETC">Hobbies</H2>
+
+
+<UL>
+<li>  Traveling</li>
+<li>  Playing video games</li>
+<li>  Listening to music, playing instruments (esp. ErHu <img style="max-height:18px;" src="imgs/erhu.png"/>)</li>
+</UL>
+<img class="img-responsive" style="max-height:200px;"src="imgs/travel.png"/>
+-->
+
+
+</div>
+ </div>
+
+
+</div><a id="scrollUp" href="https://bcmi.sjtu.edu.cn/~zhangzs/#top" style="display: none; position: fixed; z-index: 2147483647;"></a><div id="joinContentApp" data-v-app=""><div data-v-02b265ec="" class="youdao_translator__popup-thumb_conatiner" id="popupThumbId" style="display: none;"><img data-v-02b265ec="" class="youdao_translator__icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/fe6bea567997dd4837a8ded07e2fe2bc.png"><div data-v-02b265ec="" class="search-click__box"></div><div data-v-02b265ec="" class="ai-click__box"></div><!----></div><div data-v-4c9d329a="" class="youdao_translator_popup-card_container youdao_translator_bg_main" id="popupCardId" style="display: none;"><div data-v-e861f71a="" data-v-4c9d329a="" class="youdao_translator_header-container youdao_translator_bg_header" id="popupCardHeader"><img data-v-e861f71a="" class="youdao_translator__title" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/c49e45610c39da122cfeefaeebd55428.svg"><div data-v-7e1231e7="" data-v-e861f71a="" class="youdao_translator_select-container"><div data-v-7e1231e7="" class="youdao_translator_current-selected"><div data-v-7e1231e7="" class="youdao_translator_selected youdao_translator_color_text_1">英汉互译</div></div></div><div data-v-e861f71a="" class="youdao_translator__options"><div data-v-e861f71a="" class="youdao_translator_pin-btn youdao_translator_fixed"><img data-v-e861f71a="" class="youdao_translator_pin-btn__icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/4cd15656f3223cfe3e270408a17a7d9a.svg"></div><div data-v-e861f71a="" class="youdao_translator_more-btn"><img data-v-e861f71a="" class="youdao_translator_more-btn_icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/680c0e9d2181b21748b6e7de487dddd0.svg"></div><div data-v-e861f71a="" class="youdao_translator_close-btn"><img data-v-e861f71a="" class="youdao_translator_close-btn_icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/cd386aa8b1162ba18e2e416d0d5cb185.svg"></div></div></div><div data-v-4c9d329a="" class="youdao_translator_popup-card_main"><div data-v-4c9d329a="" class="youdao_translator_search__popup"><div data-v-0a1fd56f="" data-v-4c9d329a="" class="youdao_translator_input-container" input="" style="--ebb987c8: auto; --6ce113ce: 220px; --e24983a6: 22px; --363ccf6a: 8px; --64f81e9a: #939599;"><input data-v-0a1fd56f="" class="youdao_translator_popcard_input youdao_translator_bg_main" id="searchInput" placeholder="请输入要翻译的内容" maxlength="500" show-word-limit="false" autocomplete="off"><div data-v-0a1fd56f="" class="youdao_translator_suffix"><!----><div data-v-0a1fd56f="" class="youdao_translator_input-options"><div data-v-0a1fd56f="" class="youdao_translator_search_input__count youdao_translator_color_text_3" style="display: none;">0 / 500</div><div data-v-0a1fd56f="" class="youdao_translator_search_input__clear" style="display: none;"><img data-v-0a1fd56f="" class="youdao_translator_search_input__clear__icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/cd386aa8b1162ba18e2e416d0d5cb185.svg"></div><div data-v-0a1fd56f="" class="youdao_translator_search_input__search"><img data-v-0a1fd56f="" class="youdao_translator_search_input__search__icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/c3537c6c57e37ac3f5511d5df34a24fb.svg"></div></div></div></div></div><div data-v-4c9d329a="" class="youdao_translator_popup-card_divider youdao_translator_color_bg_5"></div></div><div data-v-59d0bc3e="" class="youdao_translator__result-container"><div data-v-59d0bc3e="" class="youdao_translator__result-cell"><!----><!----><div data-v-582010bd="" data-v-59d0bc3e="" class="content"><img data-v-582010bd="" class="img no-input" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/4d2316e879f82970a7653ade60880e40.svg"><div data-v-582010bd="" class="tips youdao_translator_color_text_1">无输入内容</div></div></div></div><!----></div><div data-v-747da2c0="" class="youdao_aibox_popup-card_container light" id="aiboxCardId" style="display: none;"><div data-v-07bb1ac9="" data-v-747da2c0="" class="youdao_aibox_header_container"><img data-v-07bb1ac9="" class="youdao_aibox__logo" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/166a5b4dd1659f3103e7648500444e68.png"><img data-v-07bb1ac9="" class="youdao_aibox__beta" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/5368a48155d18c6a2ce8ab95f2715e1d.png"><div data-v-07bb1ac9="" class="youdao_translator__options"><div data-v-07bb1ac9="" class="remain-time">剩余免费次数: 10</div><div data-v-07bb1ac9="" class="svip-content"><div data-v-07bb1ac9="">SVIP无限畅享</div></div><div data-v-07bb1ac9="" class="youdao_translator_pin-btn youdao_translator_fixed"><img data-v-07bb1ac9="" class="youdao_translator_pin-btn__icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/4cd15656f3223cfe3e270408a17a7d9a.svg"></div><div data-v-07bb1ac9="" class="youdao_translator_more-btn"><img data-v-07bb1ac9="" class="youdao_translator_more-btn_icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/bdf5306d6a3e47510977e09d72c05bd4.png"></div><div data-v-07bb1ac9="" class="youdao_translator_close-btn"><img data-v-07bb1ac9="" class="youdao_translator_close-btn_icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/0abdc41f1336845de735e079b333b771.png"></div></div></div><div data-v-747da2c0="" class="youdao_aibox"><div data-v-747da2c0="" class="youdao_aibox_index"><div data-v-7c948ba6="" class="youdao-aibox_container" id="result-box"><div data-v-7c948ba6="" class="origin-area" id="origin-area"><div data-v-8af6108a="" data-v-7c948ba6="" class="origin" id="origin"><div data-v-8af6108a="" class="origin-header AI-color_bg_1"><div data-v-8af6108a="" class="origin-title color_text_3"><img data-v-8af6108a="" class="origin_title_icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/fc2bee2dc9853010824265e3cf01e5c9.png"><span data-v-8af6108a="" class="color_text_1">你的文本：</span></div><div data-v-8af6108a="" class="origin-options"><div data-v-8af6108a="" class="origin-input_icon tips pron" style="display: none;"><div data-v-23d71922="" data-v-8af6108a="" class="youdao_translator__pronounce_comp pronounce"><a data-v-23d71922="" class="youdao_translator_pronounce" data-syncid="0_originInput" title="点击发音" href="javascript:;" style="width: 24px; height: 24px; border-radius: 4px; display: flex; justify-content: center; align-items: center; color: transparent;"><svg class="youdao_translator_static-pronounce" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-23d71922=""><path d="M0.545908 5.3378L0.506694 10.6489C0.503005 11.1486 0.907016 11.5556 1.40667 11.5556H3.26438C3.65146 11.5556 4.02355 11.7052 4.30286 11.9732L6.80768 14.3764C7.44338 14.9863 8.5 14.5357 8.5 13.6548V10.6667V2.36388C8.5 1.48019 7.43775 1.03083 6.80359 1.64624L4.35654 4.02091C4.07664 4.29253 3.70195 4.44444 3.31192 4.44444H1.44588C0.95142 4.44444 0.549558 4.84335 0.545908 5.3378Z" stroke="#939599" stroke-linecap="round" stroke-linejoin="round" data-v-23d71922=""></path><path d="M13.2344 12.2188C14.3573 11.4535 15.1094 9.875 15.1094 8C15.1094 6.125 14.3284 4.554 13.2344 3.78125" stroke="#939599" stroke-width="1.125" stroke-linecap="round" data-v-23d71922=""></path><path d="M10.9844 9.87891C11.5458 9.49626 11.9219 8.79571 11.9219 7.99488C11.9219 7.20649 11.5314 6.51528 10.9844 6.12891" stroke="#939599" stroke-linecap="round" data-v-23d71922=""></path></svg><svg class="youdao_translator_voice-pronounce" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-23d71922=""><path d="M0.545908 5.3378L0.506694 10.6489C0.503005 11.1486 0.907016 11.5556 1.40667 11.5556H3.26438C3.65146 11.5556 4.02355 11.7052 4.30286 11.9732L6.80768 14.3764C7.44338 14.9863 8.5 14.5357 8.5 13.6548V10.6667V2.36388C8.5 1.48019 7.43775 1.03083 6.80359 1.64624L4.35654 4.02091C4.07664 4.29253 3.70195 4.44444 3.31192 4.44444H1.44588C0.95142 4.44444 0.549558 4.84335 0.545908 5.3378Z" stroke="#FB4A3E" stroke-linecap="round" stroke-linejoin="round" data-v-23d71922=""></path><path class="youdao_translator__audio__01" d="M13.2344 12.2188C14.3573 11.4535 15.1094 9.875 15.1094 8C15.1094 6.125 14.3284 4.554 13.2344 3.78125" stroke="#FB4A3E" stroke-width="1.125" stroke-linecap="round" data-v-23d71922=""></path><path class="youdao_translator__audio__00" d="M10.9844 9.87891C11.5458 9.49626 11.9219 8.79571 11.9219 7.99488C11.9219 7.20649 11.5314 6.51528 10.9844 6.12891" stroke="#FB4A3E" stroke-linecap="round" data-v-23d71922=""></path></svg></a></div></div><div data-v-8af6108a="" class="tips fold" style="display: none;"><img data-v-8af6108a="" class="icon_unfold" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/fd8fd985ce581ba3eb5a923ea34a60f6.png"></div></div></div><textarea data-v-8af6108a="" class="origin-text color_text_1 no_text" rows="1" autofocus=""></textarea><div data-v-8af6108a="" class="origin-footer" style="display: none;"><div data-v-8af6108a="" class="limit AI-color_bg_1" style="color: rgb(141, 149, 181);">0/2000</div><img data-v-8af6108a="" class="icon_clear" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/61a331a4f463d6cf0872c1cd7d075489.png"></div></div></div><div data-v-7c948ba6="" class="scroll-area" style="max-height: 190px;"><!----></div><div data-v-7c948ba6="" class="youdao_ai_footer AI-color_text_3" id="result-footer"><span data-v-7c948ba6="" class="no_tips">你可以参考以下模版</span><img data-v-7c948ba6="" class="icon_right_down" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/1ac8af1acd1463893248c9dcdc4cdd53.png"></div></div><div data-v-5ec88791="" class="bottom-menu_container AI-color_bg_1 more-width" id="bottom-menu"><!----><!----><!----><!----><div data-v-5ec88791="" class="my-menu"><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">句子润色</div><img data-v-5ec88791="" class="more-icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/2590c2878f4ad37e124d9b8a42b94cf5.png"></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">语法纠错</div><!----></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">翻译</div><img data-v-5ec88791="" class="more-icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/2590c2878f4ad37e124d9b8a42b94cf5.png"></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">单词百科</div><!----></div><div data-v-5ec88791="" class="my-menu-item"><div data-v-5ec88791="" class="name">写作模板</div><img data-v-5ec88791="" class="more-icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/2590c2878f4ad37e124d9b8a42b94cf5.png"></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">论文去重</div><!----></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">代码分析</div><img data-v-5ec88791="" class="more-icon" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/2590c2878f4ad37e124d9b8a42b94cf5.png"></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">重点提炼</div><!----></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">内容扩写</div><!----></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">写作建议</div><!----></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">智能回复</div><!----></div><div data-v-5ec88791="" class="my-menu-item disabled color_text_5"><div data-v-5ec88791="" class="name">prompt优化</div><!----></div></div><img data-v-5ec88791="" class="menu-mask" src="./Zhuosheng Zhang, Shanghai Jiao Tong University_files/0ba2e8e239c935dec15abf1ae17ff731.png"><!----></div><div data-v-93f28dd0="" class="bottom-input AI-color_bg_1" id="bottom-input"><div data-v-93f28dd0="" class="input-area"><input data-v-93f28dd0="" class="input" placeholder="输入你想要的写作模版..." maxlength="100"><div data-v-93f28dd0="" class="options"><!----><div data-v-93f28dd0="" class="icon" style="display: none;"><img data-v-93f28dd0="" class="icon_send_message" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAdBSURBVHgB7VhNbxtVFL33jSdVF6juL4g3rOsgsWBlV2LBAqmpBJuqqJMKRBdFchCsEK3DFgGm0KpU/XAkVLWVUB0hFmwad8M62cKC5BfUXSBK7HmX+/HeOF9tDXGaLvyk2JOZN2/OPffcc98YYDImYzIm4yAHwks+Xm1SteR8fQCu98cFbG+//lIGUG1S3XuokYMsR6h4B0SMlP+Wfv8MT26eW4KXZLz+OdVygjqDzHwO0+gACQiccOwJJQCPOLv9vgMN4I1PqYYp1HOijDxVnLBMLIuAmcGjRyBHgJ7ncyJ629d44QHUP+nXISmdyIFBA5VZKuAUsAAUlvmDhtp2nsEjJ4BFhA5Xtq/3QgJ4s8GgnTvhHZ5h0EeJUaMoBE0iAppZBmNZta5BeP0kxi054VTk8OIy8Pb5fp0Sx0zDGQZ0lOQk08y6UJkweJWFYHQ8IYL34X6GixKkxJKzxlzCaQC/CvsZwOw5kQczjQzaMWjByyiYcKWamQQ9RgEXAJOlgf/vMtFljq6qwaiGRDlyzOFw8N658Uvonff7dVdyNY/UYOBldQ5JP59wDEy1Ld/CvtEKQj8XJGdA56xzEE0GzNbpM1FLrAnUTFk2JJoEYG0sAZxm0MxGjQ8zXnrak+pUtUGqaSGZ9MA5Yd2uCxZh1+s86LEoWrSxseimDt3nc1VlWq570hpxzmKwRBDmvT0EMDdHNcJBnTFkvP60ALQiAy0xkiiMXpGGolUSVfBWmJYElVI3R15n8AST0qH7PKWqU/kjV9lptHpCUkZCBkJvpYX/rYjPnQ5MIzHovOJtTYi61m9QiwNlOsRQWKLFpwKXk+gcF2E+/+s3afetBlVynFoW/9fUxODRGphQT9q/JHt6+8puGHcN4KNTG5laHmKNqYXQW4CNQBkCCkEQBPAF06S+rtq3h8ts5+hxTn7hl+9KLZkk4DncZQ6yopIBMMlp9lBlqEnbtE4JaHWkABoCHvGWOQSBypJCs2HELqZWH6TaFuwUnENzrxpGDZidw1/KS6Xmz61SL4JPyC8zqooJXOtU0TM/WvS6OtqTpZA0KHR/jhQAl85FdggFr4UpJAsQis5hTwS7rro1Bi1N+fC+h7mnhZ+upN249uw5qvicwTPzUuhqq+pIugBKslGtP5aQmZZ8DPxgtAzwKpWIEcJmKqSYNQzWIb1NcMHpwiCdgrjWJ5q/90Ops3ndkx/SMUh8hy224o1xHD7HNgsShGYNLMUUJmi90c59kAy34wRhF8m0KIsqcGFViDBvVsbsWCtNi4H/f8z/L/y14WbuXdsK/t0PNqpJ4nldqoT70NbXjRqv7SAB48eeF5jxhkCu/fbl1GhFzME2+OYuM3Ak5s8FHxbmQvFu2oBJ5mEdqX988ebhte3rnT5Lx/ouX+a6KOMm2jVdagrqY7ofiul0YY41AF4fd3egYu7m8fXdqdUU8xlw+ccMcokXXQms6LZWsxMYUhaDTtvtneBPZRtVn+Rdvl52EO4rsodhDcEpSC27kX1hC4PLJbSzgcUx8hsZu1N14LBMlHPTSaZZR7J1sAbFf1NJqXL5Bq5vBs9bjAeyJ/Jq6bYz88qrsCquYHoX4u2Y57moHp0jRS49+NKDr9LGbrhG7sSt24UGu/Jx/r1BlZ9cZ7fSlj/o9+Vt6Vu5ljF4KiUP+FI5tAdpeACFBENzMlvWHEqhoovbEbLeBvoSAzng6BIadZAfLMXiVhrD616W/c1vVu4+u8ZRfQnxBEXBBiOIBuGKYytcJ4HpN4ILUlXpeVobewBpTp2oZ3EJfm2qNTIqp5BKH6mgN7cK4E3/3kAHZ7PNgwaoTGPhamFdm4s0gNL4M9C6c3iNmVpDy7i2+38GeZ1BzCrQwHYsUKc2SUMrjgwXdmnBuiLIcB/R4+4um7g9B6A3k18yYPynLyZ0kb+PCNDCqYZgzGHsoSgZwvCy4iD0hZCNKE09Blp5JgbYy/DYURDeDJu/q1HPoOds+7GlCcbAMJzjinahYboQnGUmNkno7VsArTtpV37q2Orhup1RCTmkL1hCTVdkgoZ9RLcHGHpLkJb5JoUiDxLbfRc6lgBkMJCOsaZMBweR1krNa+20eb2dLjCRJ0XLBphiA8PYBIvMaLasmON2xeW4jxICdaCHKhvAYTf1sHD1x3QhzrnRLnUGMJjha+smrJCtongBi05NxXunFTj6NdjPAPpPUrZTfKRS4IcmQIvf306b2+fJViOF/vEEcNWZZEz3W7cOxXYjWmjnytT+ZqDVwV4Og9f4gS1GMc8de+5pc69yENdvJTNWF0FyEAKA2DesgINbrT7v+SPvhcY9zmYbDf6t8EIuP8XouzVoa5PK9mHPxDlt372azD1rnT1n4P+Om+2pVk59ydx6tE99fSwciusrcc3nrXNgAciQuvCUSHG3zYlc7Mjs/X7+9uXh7vZp48AktH1kmfwAzLtbpEfulXSx/Yztw2RMxmRMxmSMbfwLb4dXV1Enh/8AAAAASUVORK5CYII="></div></div></div></div><!----></div></div><div class="toast"></div></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
