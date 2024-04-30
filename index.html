@@ -432,6 +432,46 @@ Automatic mainstream hashtag recommendation aims to accurately provide users wit
     </li>
 </ul>
 
+    
+<ul>
+    <li>
+    <b style="color: #224b8d">Generative Judge for Evaluating Alignment</b><br>
+      Junlong Li, Shichao Sun, Weizhe Yuan, <b>Run-Ze Fan</b>, Hai Zhao, Pengfei Liu.<br>
+      ICLR, 2024<br>
+      [<a href="https://arxiv.org/abs/2310.05470" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;Auto-J_abs&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;Auto-J_bib&#39;)" target="_self">Bib</a>]
+        [<a href="https://github.com/GAIR-NLP/auto-j" target="_blank">Code</a>]
+        [<a href="https://gair-nlp.github.io/auto-j/" target="_blank">Page</a>]
+        [<a href="https://mp.weixin.qq.com/s/YjCgSXn_aKUYKzpQrBg7BA" target="_blank">机器之心</a>]
+      <br>
+      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/GAIR-NLP/auto-j" target="_blank" rel="noopener" aria-label="Star Auto-J on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>Auto-J</span></a></div></template></span></div>
+        <div id="Auto-J_abs" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+The rapid development of Large Language Models (LLMs) has substantially expanded the range of tasks they can address. In the field of Natural Language Processing (NLP), researchers have shifted their focus from conventional NLP tasks (e.g., sequence tagging and parsing) towards tasks that revolve around aligning with human needs (e.g., brainstorming and email writing). This shift in task distribution imposes new requirements on evaluating these aligned models regarding generality (i.e., assessing performance across diverse scenarios), flexibility (i.e., examining under different protocols), and interpretability (i.e., scrutinizing models with explanations). In this paper, we propose a generative judge with 13B parameters, Auto-J, designed to address these challenges. Our model is trained on user queries and LLM-generated responses under massive real-world scenarios and accommodates diverse evaluation protocols (e.g., pairwise response comparison and single-response evaluation) with well-structured natural language critiques. To demonstrate the efficacy of our approach, we construct a new testbed covering 58 different scenarios. Experimentally, Auto-J outperforms a series of strong competitors, including both open-source and closed-source models, by a large margin. We also provide detailed analysis and case studies to further reveal the potential of our method and make a variety of resources public at this <a href="https://github.com/GAIR-NLP/auto-j" target="_blank">https://github.com/GAIR-NLP/auto-j</a>.                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Auto-J_bib" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{li2023generative,
+  title={Generative Judge for Evaluating Alignment},
+  author={Li, Junlong and Sun, Shichao and Yuan, Weizhe and Fan, Run-Ze and Zhao, Hai and Liu, Pengfei},
+  journal={arXiv preprint arXiv:2310.05470},
+  year={2023},
+  url={https://arxiv.org/abs/2310.05470}
+}</pre>
+       </div>
+    </li>
+</ul>
+
+
 <ul>
     <li>
     <b style="color: #224b8d">Merging Experts into One: Improving Computational Efficiency of Mixture of Experts</b><br>
@@ -471,44 +511,6 @@ Scaling the size of language models usually leads to remarkable advancements in 
     doi = "10.18653/v1/2023.emnlp-main.907",
     pages = "14685--14691",
     abstract = "Scaling the size of language models usually leads to remarkable advancements in NLP tasks. But it often comes with a price of growing computational cost. Although a sparse Mixture of Experts (MoE) can reduce the cost by activating a small subset of parameters (e.g., one expert) for each input, its computation escalates significantly if increasing the number of activated experts, limiting its practical utility. Can we retain the advantages of adding more experts without substantially increasing the computational costs? In this paper, we first demonstrate the superiority of selecting multiple experts and then propose a computation-efficient approach called \textbf{Merging Experts into One} (MEO), which reduces the computation cost to that of a single expert. Extensive experiments show that MEO significantly improves computational efficiency, e.g., FLOPS drops from 72.0G of vanilla MoE to 28.6G (MEO). Moreover, we propose a token-level attention block that further enhances the efficiency and performance of token-level MEO, e.g., 83.3{\%} (MEO) vs. 82.6{\%} (vanilla MoE) average score on the GLUE benchmark. Our code will be released upon acceptance. Code will be released at: \url{https://github.com/Shwai-He/MEO}.",
-}</pre>
-       </div>
-    </li>
-</ul>
-
-<ul>
-    <li>
-    <b style="color: #224b8d">Generative Judge for Evaluating Alignment</b><br>
-      Junlong Li, Shichao Sun, Weizhe Yuan, <b>Run-Ze Fan</b>, Hai Zhao, Pengfei Liu.<br>
-      ICLR, 2024<br>
-      [<a href="https://arxiv.org/abs/2310.05470" target="_blank">PDF</a>]
-      [<a href="javascript:toggleBibtex(&#39;Auto-J_abs&#39;)" target="_self">Abstract</a>]
-      [<a href="javascript:toggleBibtex(&#39;Auto-J_bib&#39;)" target="_self">Bib</a>]
-        [<a href="https://github.com/GAIR-NLP/auto-j" target="_blank">Code</a>]
-        [<a href="https://gair-nlp.github.io/auto-j/" target="_blank">Page</a>]
-        [<a href="https://mp.weixin.qq.com/s/YjCgSXn_aKUYKzpQrBg7BA" target="_blank">机器之心</a>]
-      <br>
-      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/GAIR-NLP/auto-j" target="_blank" rel="noopener" aria-label="Star Auto-J on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>Auto-J</span></a></div></template></span></div>
-        <div id="Auto-J_abs" class="blockcontent" style="DISPLAY: none">
-            <table class="imgtable">
-                <tbody>
-                    <tr>
-                        <td>
-                            <p style="FONT-SIZE: 16px">
-The rapid development of Large Language Models (LLMs) has substantially expanded the range of tasks they can address. In the field of Natural Language Processing (NLP), researchers have shifted their focus from conventional NLP tasks (e.g., sequence tagging and parsing) towards tasks that revolve around aligning with human needs (e.g., brainstorming and email writing). This shift in task distribution imposes new requirements on evaluating these aligned models regarding generality (i.e., assessing performance across diverse scenarios), flexibility (i.e., examining under different protocols), and interpretability (i.e., scrutinizing models with explanations). In this paper, we propose a generative judge with 13B parameters, Auto-J, designed to address these challenges. Our model is trained on user queries and LLM-generated responses under massive real-world scenarios and accommodates diverse evaluation protocols (e.g., pairwise response comparison and single-response evaluation) with well-structured natural language critiques. To demonstrate the efficacy of our approach, we construct a new testbed covering 58 different scenarios. Experimentally, Auto-J outperforms a series of strong competitors, including both open-source and closed-source models, by a large margin. We also provide detailed analysis and case studies to further reveal the potential of our method and make a variety of resources public at this <a href="https://github.com/GAIR-NLP/auto-j" target="_blank">https://github.com/GAIR-NLP/auto-j</a>.                            </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-          
-        <div id="Auto-J_bib" class="blockcontent" style="DISPLAY: none">
-            <pre>@article{li2023generative,
-  title={Generative Judge for Evaluating Alignment},
-  author={Li, Junlong and Sun, Shichao and Yuan, Weizhe and Fan, Run-Ze and Zhao, Hai and Liu, Pengfei},
-  journal={arXiv preprint arXiv:2310.05470},
-  year={2023},
-  url={https://arxiv.org/abs/2310.05470}
 }</pre>
        </div>
     </li>
