@@ -243,15 +243,16 @@ University of Massachusetts Amherst<br>
 <H2 id="News">News</H2>
  <div>
 <UL>
+<LI>2025.04: <a href="https://github.com/GAIR-NLP/MegaScience" target="_blank" rel="noopener">MegaScience</a> has been published. Check out our <a href="https://huggingface.co/MegaScience" target="_blank" rel="noopener">datasets</a> and <a href="https://huggingface.co/MegaScience" target="_blank" rel="noopener">models</a>.</LI>
 <LI>2025.04: <a href="https://gair-nlp.github.io/cognition-engineering/" target="_blank" rel="noopener">Cognition Engineering</a> has been published.</LI>
 <LI>2024.12: <a href="https://gair-nlp.github.io/PC-Agent/" target="_blank" rel="noopener">PC-Agent</a> has been published.</LI>
 <LI>2024.09: <a href="https://gair-nlp.github.io/OlympicArena/" target="_blank" rel="noopener">OlympicArena</a> has been accepted by NeurIPS 2024 Datasets and Benchmarks.</LI>
 <LI>2024.09: <a href="https://gair-nlp.github.io/ReAlign/" target="_blank" rel="noopener">ReAlign</a> has been accepted by EMNLP2024 Findings.</LI>
 <LI>2024.07: I am happy to contribute to <a href="https://arxiv.org/abs/2407.21530" target="_blank" rel="noopener">The 1st Workshop on Data Contamination (CONDA)</a>.</LI>
 <LI>2024.04: <a href="https://gair-nlp.github.io/benbench/" target="_blank" rel="noopener">BenBench</a> has been published.</LI>
-<LI>2024.01: <a href="https://gair-nlp.github.io/auto-j/" target="_blank" rel="noopener">Auto-J</a> has been accepted by ICLR2024.</LI>
-<LI>2023.12: <a href="https://arxiv.org/abs/2312.10466" target="_blank" rel="noopener">RIGHT</a> has been accepted by ECIR2024.</LI>
-<LI>2023.10: <a href="https://arxiv.org/abs/2310.09832" target="_blank" rel="noopener">MEO</a> has been accepted by EMNLP2023 Main Conference <b>(Oral)</b>.</LI>
+<!--<LI>2024.01: <a href="https://gair-nlp.github.io/auto-j/" target="_blank" rel="noopener">Auto-J</a> has been accepted by ICLR2024.</LI>-->
+<!--<LI>2023.12: <a href="https://arxiv.org/abs/2312.10466" target="_blank" rel="noopener">RIGHT</a> has been accepted by ECIR2024.</LI>-->
+<!--<LI>2023.10: <a href="https://arxiv.org/abs/2310.09832" target="_blank" rel="noopener">MEO</a> has been accepted by EMNLP2023 Main Conference <b>(Oral)</b>.</LI>-->
 
 
 </UL>
@@ -291,6 +292,46 @@ University of Massachusetts Amherst<br>
 <a href="https://www.semanticscholar.org/author/Run-Ze-Fan/1657674644" target="_blank"><img src="RunzeFan_files/semantic_scholar_logo.png" height="20" alt="semantic scholar"></a> |
 <a href="https://dblp.org/pid/355/5702.html" target="_blank"> <img src="RunzeFan_files/dblp_logo.png" height="22" alt="dblp"></a><br>
     <i>(* indicates equal contribution)</i>
+
+<ul>
+    <li>
+    <b style="color: #224b8d">MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning</b><br>
+        <b>Run-Ze Fan</b>, Zengzhi Wang, Pengfei Liu<br>
+      arXiv, 2025<br>
+<!--      <font color="#A6192E">"Merely by reformatting the response, LLMs' performance improves significantly (e.g. LLaMA-2-13B on GSM8K: 46% -> 56%)."</font> <a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>-->
+      [<a href="https://arxiv.org/abs/2507.16812" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;MegaScience_abs&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;MegaScience_bib&#39;)" target="_self">Bib</a>]
+      [<a href="https://github.com/GAIR-NLP/MegaScience" target="_blank">Code</a>]
+      [<a href="https://huggingface.co/MegaScience" target="_blank">HuggingFace (Datasets & Models)</a>]
+      [<a href="https://github.com/GAIR-NLP/lm-open-science-evaluation" target="_blank">Evaluation System</a>]
+<!--      [<a href="https://mp.weixin.qq.com/s/G3WTW2RiYNA6epyQoZZ9Ng" target="_blank">机器之心</a>]-->
+      <br>
+      <a href="https://github.com/GAIR-NLP/MegaScience" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GAIR-NLP/MegaScience?label=MegaScience"></a>
+      <a href="https://github.com/GAIR-NLP/lm-open-science-evaluation" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GAIR-NLP/lm-open-science-evaluation?label=lm-open-science-evaluation"></a>
+        <div id="MegaScience_abs" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Scientific reasoning is critical for developing AI scientists and supporting human researchers in advancing the frontiers of natural science discovery. However, the open-source community has primarily focused on mathematics and coding while neglecting the scientific domain, largely due to the absence of open, large-scale, high-quality, verifiable scientific reasoning datasets. To bridge this gap, we first present TextbookReasoning, an open dataset featuring truthful reference answers extracted from 12k university-level scientific textbooks, comprising 650k reasoning questions spanning 7 scientific disciplines. We further introduce MegaScience, a large-scale mixture of high-quality open-source datasets totaling 1.25 million instances, developed through systematic ablation studies that evaluate various data selection methodologies to identify the optimal subset for each publicly available scientific dataset. Meanwhile, we build a comprehensive evaluation system covering diverse subjects and question types across 15 benchmarks, incorporating comprehensive answer extraction strategies to ensure accurate evaluation metrics. Our experiments demonstrate that our datasets achieve superior performance and training efficiency with more concise response lengths compared to existing open-source scientific datasets. Furthermore, we train Llama3.1, Qwen2.5, and Qwen3 series base models on MegaScience, which significantly outperform the corresponding official instruct models in average performance. In addition, MegaScience exhibits greater effectiveness for larger and stronger models, suggesting a scaling benefit for scientific tuning. We release our data curation pipeline, evaluation system, datasets, and seven trained models to the community to advance scientific reasoning research.                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="MegaScience_bib" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{fan2025megascience,
+  title={MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning},
+  author={Fan, Run-Ze and Wang, Zengzhi and Liu, Pengfei},
+  year={2025},
+  journal={arXiv preprint arXiv:2507.16812},
+  url={https://arxiv.org/abs/2507.16812}
+}</pre>
+       </div>
+    </li>
+</ul>
+
 
 <ul>
     <li>
