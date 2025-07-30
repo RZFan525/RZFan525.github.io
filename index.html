@@ -286,13 +286,147 @@ University of Massachusetts Amherst<br>
 
 <div id="publication" class="field" style="">
 <div class="blank"></div>
-<h2 id="Publications">Publications</h2>
+<!--<h2 id="Publications">Publications</h2>-->
+<h2 id="Publications">
+    <span class="title-tab active" onclick="showPublications('selected')">Selected Publications</span>
+    <span class="title-separator"> | </span>
+    <span class="title-tab" onclick="showPublications('full')">Full Publications</span>
+</h2>
 <!-- Discover the <b><a href="https://bcmi.sjtu.edu.cn/~zhangzs/pub.html" style="color:#005580">full list</a></b> | -->
 <a href="https://scholar.google.com/citations?user=mhot7AUAAAAJ&hl=en" target="_blank"><img src="RunzeFan_files/google_scholar.png" height="20" alt="google scholar"></a> |
 <a href="https://www.semanticscholar.org/author/Run-Ze-Fan/1657674644" target="_blank"><img src="RunzeFan_files/semantic_scholar_logo.png" height="20" alt="semantic scholar"></a> |
 <a href="https://dblp.org/pid/355/5702.html" target="_blank"> <img src="RunzeFan_files/dblp_logo.png" height="22" alt="dblp"></a><br>
     <i>(* indicates equal contribution)</i>
 
+<!-- Selected Publications List -->
+<div id="selected-publications" class="publication-list" style="display: block;">
+<ul>
+    <li>
+    <b style="color: #224b8d">MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning</b><br>
+        <b>Run-Ze Fan*</b>, Zengzhi Wang*, Pengfei Liu<br>
+      arXiv, 2025<br>
+<!--      <font color="#A6192E">"Merely by reformatting the response, LLMs' performance improves significantly (e.g. LLaMA-2-13B on GSM8K: 46% -> 56%)."</font> <a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>-->
+      [<a href="https://arxiv.org/abs/2507.16812" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;MegaScience_abs1&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;MegaScience_bib1&#39;)" target="_self">Bib</a>]
+      [<a href="https://github.com/GAIR-NLP/MegaScience" target="_blank">Code</a>]
+      [<a href="https://huggingface.co/MegaScience" target="_blank">HuggingFace (Datasets & Models)</a>]
+      [<a href="https://github.com/GAIR-NLP/lm-open-science-evaluation" target="_blank">Evaluation System</a>]
+<!--      [<a href="https://mp.weixin.qq.com/s/G3WTW2RiYNA6epyQoZZ9Ng" target="_blank">机器之心</a>]-->
+      <br>
+      <a href="https://github.com/GAIR-NLP/MegaScience" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GAIR-NLP/MegaScience?label=MegaScience"></a>
+      <a href="https://github.com/GAIR-NLP/lm-open-science-evaluation" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GAIR-NLP/lm-open-science-evaluation?label=lm-open-science-evaluation"></a>
+        <div id="MegaScience_abs1" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Scientific reasoning is critical for developing AI scientists and supporting human researchers in advancing the frontiers of natural science discovery. However, the open-source community has primarily focused on mathematics and coding while neglecting the scientific domain, largely due to the absence of open, large-scale, high-quality, verifiable scientific reasoning datasets. To bridge this gap, we first present TextbookReasoning, an open dataset featuring truthful reference answers extracted from 12k university-level scientific textbooks, comprising 650k reasoning questions spanning 7 scientific disciplines. We further introduce MegaScience, a large-scale mixture of high-quality open-source datasets totaling 1.25 million instances, developed through systematic ablation studies that evaluate various data selection methodologies to identify the optimal subset for each publicly available scientific dataset. Meanwhile, we build a comprehensive evaluation system covering diverse subjects and question types across 15 benchmarks, incorporating comprehensive answer extraction strategies to ensure accurate evaluation metrics. Our experiments demonstrate that our datasets achieve superior performance and training efficiency with more concise response lengths compared to existing open-source scientific datasets. Furthermore, we train Llama3.1, Qwen2.5, and Qwen3 series base models on MegaScience, which significantly outperform the corresponding official instruct models in average performance. In addition, MegaScience exhibits greater effectiveness for larger and stronger models, suggesting a scaling benefit for scientific tuning. We release our data curation pipeline, evaluation system, datasets, and seven trained models to the community to advance scientific reasoning research.                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="MegaScience_bib1" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{fan2025megascience,
+  title={MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning},
+  author={Fan, Run-Ze and Wang, Zengzhi and Liu, Pengfei},
+  year={2025},
+  journal={arXiv preprint arXiv:2507.16812},
+  url={https://arxiv.org/abs/2507.16812}
+}</pre>
+       </div>
+    </li>
+</ul>
+    <ul>
+    <li>
+    <b style="color: #224b8d">Benchmarking Benchmark Leakage in Large Language Models</b><br>
+        Ruijie Xu*, Zengzhi Wang*, <b>Run-Ze Fan*</b>, Pengfei Liu.<br>
+      arXiv, 2024<br>
+<!--      <font color="#A6192E">"Merely by reformatting the response, LLMs' performance improves significantly (e.g. LLaMA-2-13B on GSM8K: 46% -> 56%)."</font> <a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>-->
+      [<a href="https://arxiv.org/abs/2404.18824" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;BenBench_abs1&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;BenBench_bib1&#39;)" target="_self">Bib</a>]
+      [<a href="https://github.com/GAIR-NLP/benbench" target="_blank">Code</a>]
+      [<a href="https://gair-nlp.github.io/benbench/" target="_blank">Page</a>]
+      [<a href="https://huggingface.co/spaces/GAIR/BenBench" target="_blank">HuggingFace Demo</a>]
+<!--        [<a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank">Featured by AK</a>]-->
+<!--        [<a href="https://mp.weixin.qq.com/s/iIy8t27uo-DFJKEV0TK7Zg" target="_blank">量子位</a>]-->
+      <br>
+<!--      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/GAIR-NLP/benbench" target="_blank" rel="noopener" aria-label="Star BenBench on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>BenBench</span></a></div></template></span></div>-->
+        <a href="https://github.com/GAIR-NLP/benbench" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GAIR-NLP/benbench?label=BenBench"></a>
+        <div id="BenBench_abs1" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Amid the expanding use of pre-training data, the phenomenon of benchmark dataset leakage has become increasingly prominent, exacerbated by opaque training processes and the often undisclosed inclusion of supervised data in contemporary Large Language Models (LLMs). This issue skews benchmark effectiveness and fosters potentially unfair comparisons, impeding the field's healthy development. To address this, we introduce a detection pipeline utilizing Perplexity and N-gram accuracy, two simple and scalable metrics that gauge a model's prediction precision on benchmark, to identify potential data leakages. By analyzing 31 LLMs under the context of mathematical reasoning, we reveal substantial instances of training even test set misuse, resulting in potentially unfair comparisons. These findings prompt us to offer several recommendations regarding model documentation, benchmark setup, and future evaluations. Notably, we propose the "Benchmark Transparency Card" to encourage clear documentation of benchmark utilization, promoting transparency and healthy developments of LLMs. we have made our leaderboard, pipeline implementation, and model predictions publicly available, fostering future research.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="BenBench_bib1" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{xu2024benchmarking,
+      title={Benchmarking Benchmark Leakage in Large Language Models},
+      author={Xu, Ruijie and Wang, Zengzhi and Fan, Run-Ze and Liu, Pengfei},
+      year={2024},
+      journal={arXiv preprint arXiv:2404.18824},
+      url={https://arxiv.org/abs/2404.18824}
+}</pre>
+       </div>
+    </li>
+</ul>
+
+
+<ul>
+    <li>
+    <b style="color: #224b8d">Reformatted Alignment</b><br>
+        <b>Run-Ze Fan</b>, Xuefeng Li, Haoyang Zou, Junlong Li, Shwai He, Ethan Chern, Jiewen Hu, Pengfei Liu.<br>
+      EMNLP, 2024, Findings<br>
+<!--      <font color="#A6192E">"Merely by reformatting the response, LLMs' performance improves significantly (e.g. LLaMA-2-13B on GSM8K: 46% -> 56%)."</font> <a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>-->
+      [<a href="https://arxiv.org/abs/2402.12219" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;ReAlign_abs1&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;ReAlign_bib1&#39;)" target="_self">Bib</a>]
+      [<a href="https://github.com/GAIR-NLP/ReAlign" target="_blank">Code</a>]
+        [<a href="https://gair-nlp.github.io/ReAlign/" target="_blank">Page</a>]
+        [<a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank">Featured by AK</a>]
+        [<a href="https://mp.weixin.qq.com/s/iIy8t27uo-DFJKEV0TK7Zg" target="_blank">量子位</a>]
+      <br>
+<!--      <div style="padding-top:5px"><span><template shadowrootmode="closed"><style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:20px;padding:3px 10px;font-size:12px;line-height:20px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor}.btn{color:#24292e;background-color:#eff3f6;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23fafbfc'/%3e%3cstop offset='90%25' stop-color='%23eff3f6'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #fafbfc, #eff3f6 90%);background-image:linear-gradient(180deg, #fafbfc, #eff3f6 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFFAFBFC', endColorstr='#FFEEF2F5');border-color:#cdcfd1;border-color:rgba(27,31,35,.2)}:root .btn{filter:none}.btn:focus,.btn:hover{background-color:#e6ebf1;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f0f3f6'/%3e%3cstop offset='90%25' stop-color='%23e6ebf1'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF0F3F6', endColorstr='#FFE5EAF0');background-position:-0.5em;border-color:#acaeb0;border-color:rgba(27,31,35,.35)}:root .btn:focus,:root .btn:hover{filter:none}.btn:active{background-color:#e9ecef;background-image:none;border-color:#acaeb0;border-color:rgba(27,31,35,.35);box-shadow:inset 0 .15em .3em rgba(27,31,35,.15);filter:none}.social-count{color:#24292e;background-color:#fff;border-color:#d1d2d3;border-color:rgba(27,31,35,.2)}.social-count:focus,.social-count:hover{color:#0366d6}.octicon-heart{color:#ea4aaa}</style><div class="widget"><a class="btn" href="https://github.com/GAIR-NLP/ReAlign" target="_blank" rel="noopener" aria-label="Star ReAlign on GitHub"><svg viewBox="0 0 14 16" class="octicon octicon-star" style="width: 12.25px; height: 14px;" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> <span>ReAlign</span></a></div></template></span></div>-->
+<a href="https://github.com/GAIR-NLP/ReAlign" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GAIR-NLP/ReAlign?label=ReAlign"></a>
+        <div id="ReAlign_abs1" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+The quality of finetuning data is crucial for aligning large language models (LLMs) with human values. Current methods to improve data quality are either labor-intensive or prone to factual errors caused by LLM hallucinations. This paper explores elevating the quality of existing instruction data to better align with human values, introducing a simple and effective approach named ReAlign, which reformats the responses of instruction data into a format that better aligns with pre-established criteria and the collated evidence. This approach minimizes human annotation, hallucination, and the difficulty in scaling, remaining orthogonal to existing alignment techniques. Experimentally, ReAlign significantly boosts the general alignment ability, math reasoning, factuality, and readability of the LLMs.
+Encouragingly, without introducing any additional data or advanced training techniques, and merely by reformatting the response, LLaMA-2-13B's mathematical reasoning ability on GSM8K can be improved from 46.77% to 56.63% in accuracy. Additionally, a mere 5% of ReAlign data yields a 67% boost in general alignment ability measured by the Alpaca dataset. This work highlights the need for further research into the science and mechanistic interpretability of LLMs. We have made the associated code and data publicly accessible to support future studies at <a href="https://github.com/GAIR-NLP/ReAlign" target="_blank">https://github.com/GAIR-NLP/ReAlign</a>.                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="ReAlign_bib1" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{fan2024reformatted,
+      title={Reformatted Alignment},
+      author={Fan, Run-Ze and Li, Xuefeng and Zou, Haoyang and Li, Junlong and He, Shwai and Chern, Ethan and Hu, Jiewen and Liu, Pengfei},
+      year={2024},
+      journal={arXiv preprint arXiv:2402.12219},
+      url={https://arxiv.org/abs/2402.12219}
+}</pre>
+       </div>
+    </li>
+</ul>
+</div>
+
+<!-- Full Publications List -->
+<div id="full-publications" class="publication-list" style="display: none;">
 <ul>
     <li>
     <b style="color: #224b8d">MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning</b><br>
@@ -738,6 +872,69 @@ Adapter tuning, which updates only a few parameters, has become a mainstream met
        </div>
     </li>
 </ul>
+</div>
+
+
+<style>
+.title-tab {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.title-tab.active {
+    color: inherit; /* 继承h2的颜色，保持黑色 */
+}
+
+.title-tab:not(.active) {
+    color: #999;
+}
+
+.title-tab:hover:not(.active) {
+    color: #666;
+}
+
+.title-separator {
+    color: #999;
+}
+
+.publication-list {
+    transition: opacity 0.3s ease;
+}
+</style>
+
+<script>
+function showPublications(type) {
+    // 隐藏所有publication列表
+    const allLists = document.querySelectorAll('.publication-list');
+    allLists.forEach(list => {
+        list.style.display = 'none';
+    });
+
+    // 移除所有标题的active状态
+    const allTabs = document.querySelectorAll('.title-tab');
+    allTabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // 显示选中的publication列表并设置active状态
+    if (type === 'selected') {
+        document.getElementById('selected-publications').style.display = 'block';
+        document.querySelector('.title-tab[onclick="showPublications(\'selected\')"]').classList.add('active');
+    } else if (type === 'full') {
+        document.getElementById('full-publications').style.display = 'block';
+        document.querySelector('.title-tab[onclick="showPublications(\'full\')"]').classList.add('active');
+    }
+}
+
+// 页面加载时默认显示Selected Publications
+document.addEventListener('DOMContentLoaded', function() {
+    showPublications('selected');
+});
+</script>
+
+</div>
+
+
 
 <h2 id="Talks">Talks</h2>
 <div>
