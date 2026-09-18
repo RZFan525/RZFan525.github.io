@@ -243,6 +243,7 @@ University of Massachusetts Amherst<br>
 <H2 id="News">News</H2>
  <div>
 <UL>
+<LI>2026.09: <a href="https://huggingface.co/papers/2609.20804" target="_blank" rel="noopener">An Empirical Study of Harness Design for Coding Agents</a> has been published.</LI>
 <LI>2026.07: <a href="https://huggingface.co/MegaScience" target="_blank" rel="noopener">MegaScience</a> has been accepted by COLM 2026, see you in San Francisco.</LI>
 <LI>2025.07: <a href="https://github.com/GAIR-NLP/MegaScience" target="_blank" rel="noopener">MegaScience</a> has been published. Check out our <a href="https://huggingface.co/MegaScience" target="_blank" rel="noopener">datasets</a> and <a href="https://huggingface.co/MegaScience" target="_blank" rel="noopener">models</a>.</LI>
 <LI>2025.04: <a href="https://gair-nlp.github.io/cognition-engineering/" target="_blank" rel="noopener">Cognition Engineering</a> has been published.</LI>
@@ -299,6 +300,40 @@ University of Massachusetts Amherst<br>
 
 <!-- Selected Publications List -->
 <div id="selected-publications" class="publication-list" style="display: block;">
+    <ul>
+    <li>
+    <b style="color: #224b8d">An Empirical Study of Harness Design for Coding Agents</b><br>
+        <b>Run-Ze Fan*</b>, Zihao Zhang*, Simin Ma, Yebowen Hu, Shouju Wang, Kaiqiang Song, Fei Liu, Hamed Zamani, Xiaoyang Wang <br>
+      Technique report, 2026<br>
+<!--      <font color="#A6192E">"Merely by reformatting the response, LLMs' performance improves significantly (e.g. LLaMA-2-13B on GSM8K: 46% -> 56%)."</font> <a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>-->
+      [<a href="https://arxiv.org/abs/2609.20804" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;harness_design_abs1&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;harness_design_bib1&#39;)" target="_self">Bib</a>]
+<!--        [<a href="https://x.com/_akhaliq/status/1947850159611645992" target="_blank">Featured by AK</a>]-->
+<!--        [<a href="https://drive.google.com/file/d/1868ryRvi0WbQSI3nclkafRPEjOA72FlI/view?usp=sharing" target="_blank">Poster</a>]-->
+      <br>
+        <div id="harness_design_abs1" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Coding harnesses shape how autonomous coding agents translate model capabilities into long-horizon software-engineering performance, yet existing work typically evaluates harnesses as monolithic systems, leaving the effectiveness of individual components unclear. To enable component-level comparisons, we study this question with a lightweight coding harness whose execution loop is fixed while three components are varied: planning, action space, and context management. Across four models evaluated on SWE-Bench Verified and Terminal-Bench 2.1, we evaluate 176 matched settings spanning five context-management strategies, four context-window budgets, and targeted ablations of planning and action space. We find that: (1) Context management becomes increasingly valuable as the context-window budget tightens, with most of its benefit coming from preventing context-overflow failures. (2) Staging rule-based elision before LLM-based summarization provides the strongest overall efficiency among the context-management strategies, whereas making elided content recoverable adds machinery that models rarely use and yields no accuracy gain. (3) Planning shifts from an accuracy scaffold for weaker models to a cost saver for stronger models, with little change in accuracy. (4) Predefined tools improve performance for models with weaker bash proficiency, whereas bash-capable models can operate effectively with a bash-only interface and achieve substantially lower cost, especially on command-line-centric tasks. Trajectory-level analysis explains these effects: context management extends execution trajectories without substantially altering agent behavior, planning changes where trajectories stop, and the action space changes the granularity at which code is written. These findings inform model- and budget-aware harness design and provide a modular framework for evaluating future harness components.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="harness_design_bib1" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{fan2026empiricalstudyharnessdesign,
+  title={An Empirical Study of Harness Design for Coding Agents},
+  author={Fan, Run-Ze and Zhang, Zihao and Ma, Simin and Hu, Yebowen and Wang, Shouju and Song, Kaiqiang and Liu, Fei and Zamani, Hamed and Wang, Xiaoyang},
+  year={2026},
+  journal={arXiv preprint arXiv:2609.20804},
+  url={https://arxiv.org/abs/2609.20804}
+}</pre>
+       </div>
+    </li>
+</ul>
 <ul>
     <li>
     <b style="color: #224b8d">MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning</b><br>
@@ -429,6 +464,40 @@ Encouragingly, without introducing any additional data or advanced training tech
 
 <!-- Full Publications List -->
 <div id="full-publications" class="publication-list" style="display: none;">
+    <ul>
+    <li>
+    <b style="color: #224b8d">An Empirical Study of Harness Design for Coding Agents</b><br>
+        <b>Run-Ze Fan*</b>, Zihao Zhang*, Simin Ma, Yebowen Hu, Shouju Wang, Kaiqiang Song, Fei Liu, Hamed Zamani, Xiaoyang Wang <br>
+      Technique report, 2026<br>
+<!--      <font color="#A6192E">"Merely by reformatting the response, LLMs' performance improves significantly (e.g. LLaMA-2-13B on GSM8K: 46% -> 56%)."</font> <a href="https://x.com/_akhaliq/status/1759821621676724441" target="_blank" rel="noopener"><i class="fab fa-twitter big-icon" style=" font-size:20px;"></i></a><br>-->
+      [<a href="https://arxiv.org/abs/2609.20804" target="_blank">PDF</a>]
+      [<a href="javascript:toggleBibtex(&#39;harness_design_abs2&#39;)" target="_self">Abstract</a>]
+      [<a href="javascript:toggleBibtex(&#39;harness_design_bib2&#39;)" target="_self">Bib</a>]
+<!--        [<a href="https://x.com/_akhaliq/status/1947850159611645992" target="_blank">Featured by AK</a>]-->
+<!--        [<a href="https://drive.google.com/file/d/1868ryRvi0WbQSI3nclkafRPEjOA72FlI/view?usp=sharing" target="_blank">Poster</a>]-->
+      <br>
+        <div id="harness_design_abs2" class="blockcontent" style="DISPLAY: none">
+            <table class="imgtable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="FONT-SIZE: 16px">
+Coding harnesses shape how autonomous coding agents translate model capabilities into long-horizon software-engineering performance, yet existing work typically evaluates harnesses as monolithic systems, leaving the effectiveness of individual components unclear. To enable component-level comparisons, we study this question with a lightweight coding harness whose execution loop is fixed while three components are varied: planning, action space, and context management. Across four models evaluated on SWE-Bench Verified and Terminal-Bench 2.1, we evaluate 176 matched settings spanning five context-management strategies, four context-window budgets, and targeted ablations of planning and action space. We find that: (1) Context management becomes increasingly valuable as the context-window budget tightens, with most of its benefit coming from preventing context-overflow failures. (2) Staging rule-based elision before LLM-based summarization provides the strongest overall efficiency among the context-management strategies, whereas making elided content recoverable adds machinery that models rarely use and yields no accuracy gain. (3) Planning shifts from an accuracy scaffold for weaker models to a cost saver for stronger models, with little change in accuracy. (4) Predefined tools improve performance for models with weaker bash proficiency, whereas bash-capable models can operate effectively with a bash-only interface and achieve substantially lower cost, especially on command-line-centric tasks. Trajectory-level analysis explains these effects: context management extends execution trajectories without substantially altering agent behavior, planning changes where trajectories stop, and the action space changes the granularity at which code is written. These findings inform model- and budget-aware harness design and provide a modular framework for evaluating future harness components.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="harness_design_bib2" class="blockcontent" style="DISPLAY: none">
+            <pre>@article{fan2026empiricalstudyharnessdesign,
+  title={An Empirical Study of Harness Design for Coding Agents},
+  author={Fan, Run-Ze and Zhang, Zihao and Ma, Simin and Hu, Yebowen and Wang, Shouju and Song, Kaiqiang and Liu, Fei and Zamani, Hamed and Wang, Xiaoyang},
+  year={2026},
+  journal={arXiv preprint arXiv:2609.20804},
+  url={https://arxiv.org/abs/2609.20804}
+}</pre>
+       </div>
+    </li>
+</ul>
 <ul>
     <li>
     <b style="color: #224b8d">Deep Research: A Systematic Survey</b><br>
