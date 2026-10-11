@@ -29,8 +29,9 @@
     z-index: 1030;
     border-bottom: 1px solid #e8e8e8;
  }
-#Publications:target,#Background:target,#Shared:target,#Service:target,#Talks:target,#Honors:target{
-  padding-top:80px;
+/* keep anchored headings clear of the fixed navbar */
+h2[id] {
+  scroll-margin-top: 80px;
 }
 
 .navbar-nav > li > a:hover{
