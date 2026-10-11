@@ -801,10 +801,9 @@ Adapter tuning, which updates only a few parameters, has become a mainstream met
   // News: show 5 by default, toggle the rest
   var list = document.getElementById('news-list'), btn = document.getElementById('news-toggle');
   if (list && btn) {
-    var total = list.querySelectorAll('li').length;
     function render() {
       var collapsed = list.classList.contains('collapsed');
-      btn.textContent = collapsed ? 'Show all news (' + total + ')' : 'Show less';
+      btn.textContent = collapsed ? 'Show all news' : 'Show less';
       btn.setAttribute('aria-expanded', String(!collapsed));
     }
     btn.addEventListener('click', function () {
