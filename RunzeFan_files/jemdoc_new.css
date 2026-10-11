@@ -305,20 +305,11 @@ h1, h2, li,
   line-height: 1.5;
 }
 
-/* ---- CV pill in the hero icon row ---- */
+/* ---- "CV" in the hero icon row, sized to match the icons ---- */
 .hero-links .hero-cv {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  margin-left: 6px;
-  padding: 8px 14px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: .02em;
   line-height: 1;
-  border: 1px solid var(--pill-border);
-  border-radius: 999px;
-  background: var(--pill-bg);
-  color: var(--link);
 }
-.hero-links .hero-cv:hover { background: var(--accent-bg); text-decoration: none; }
-.hero-links .hero-cv .fas { font-size: 13px; }
+.hero-links .hero-cv:hover { text-decoration: none; }
