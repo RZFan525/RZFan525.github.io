@@ -38,3 +38,166 @@ h2[id] {
 				background: #337ab7 ;
 				color: white;
 			}
+
+/* ---- typography ---- */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.email {
+  color: #555;
+}
+
+/* ---- measure: keep lines at a readable length ---- */
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+    max-width: 800px;
+  }
+}
+
+/* navbar links: Bootstrap's default 14px with tighter padding so every entry
+   fits beside the brand inside the narrower container */
+.navbar-nav > li > a {
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+/* collapse the navbar into the hamburger menu below 992px instead of 768px,
+   so tablets never get a wrapped two-row navbar */
+@media (max-width: 991px) {
+  .navbar-header { float: none; }
+  .navbar-left, .navbar-right { float: none !important; }
+  .navbar-toggle { display: block; }
+  .navbar-collapse { border-top: 1px solid transparent; box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); }
+  .navbar-collapse.collapse { display: none !important; }
+  .navbar-nav { float: none !important; margin: 7.5px -15px; }
+  .navbar-nav > li { float: none; }
+  .navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px; }
+  .collapse.in { display: block !important; }
+  .navbar-collapse.in { overflow-y: auto; }
+}
+
+/* ---- hero ---- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin: 10px 0 14px;
+}
+.hero-photo { flex: 0 0 210px; }
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hero-text { min-width: 0; }
+.hero-text h1 { margin: 0 0 10px; }
+.hero-meta { font-size: 18px; }
+.hero-email { border-collapse: collapse; font-size: inherit; }
+.hero-email td { padding: 0; vertical-align: top; }
+.hero-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 12px;
+  font-size: 27px;
+  line-height: 1;
+}
+.hero-links a { color: #224b8d; transition: color .15s; }
+.hero-links a:hover { color: #15325f; }
+.hero-links .ai { font-size: 30px; } /* academicons glyphs draw lighter; match visual weight */
+@media (max-width: 767px) {
+  .hero { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .hero-photo { flex-basis: auto; width: 180px; }
+}
+
+/* ---- news ---- */
+.news-list { list-style: none; padding-left: 0; margin: 0 0 10px; }
+.news-list li { display: flex; gap: 14px; align-items: baseline; margin-bottom: 6px; }
+.news-list.collapsed .news-more { display: none; }
+.news-date { flex: 0 0 68px; color: #777; font-size: 15px; font-variant-numeric: tabular-nums; }
+.news-text { min-width: 0; }
+.news-toggle,
+.pub-tab {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #224b8d;
+  background: #fff;
+  border: 1px solid #d3d9e5;
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.news-toggle:hover, .pub-tab:hover { background: #eef2f9; }
+.news-toggle:focus-visible, .pub-tab:focus-visible { outline: 2px solid #224b8d; outline-offset: 2px; }
+.news-toggle { display: inline-flex; align-items: center; gap: 7px; }
+.news-toggle::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 10px;
+  transition: transform .2s;
+}
+.news-list:not(.collapsed) + .news-toggle::after { transform: rotate(180deg); }
+
+/* ---- publications ---- */
+.pub-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 20px;
+  margin: 2px 0 6px;
+}
+.pub-tabs { display: inline-flex; gap: 6px; }
+.pub-tab.active { background: #224b8d; border-color: #224b8d; color: #fff; }
+.pub-profiles { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14.5px; }
+.pub-profiles a { color: #555; display: inline-flex; align-items: center; gap: 6px; }
+.pub-profiles a:hover { color: #224b8d; }
+.pub-profiles .ai { font-size: 18px; }
+.pub-note { color: #777; font-size: 14px; font-style: italic; margin: 0 0 12px; }
+.pub-list { list-style: none; padding-left: 0; margin: 0; }
+.pub-list > li { margin: 0 0 22px; }
+.pub-title { color: #224b8d; font-weight: 600; }
+.pub-authors { margin-top: 1px; }
+.pub-meta { margin: 3px 0 2px; }
+.venue {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #224b8d;
+  background: #eef2f9;
+  border-radius: 4px;
+  padding: 1px 8px;
+}
+.venue-hl { color: #8a1c2b; background: #f9eced; }
+.pub-links { font-size: 15px; margin-top: 3px; }
+.pub-links a:not(:last-child)::after { content: "\00b7"; color: #a7b0c0; margin: 0 7px; }
+.pub-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.pub-badges img { display: block; height: 20px; }
+.blockcontent {
+  border: 1px solid #e3e7ef;
+  border-radius: 6px;
+  background: #fafbfd;
+  padding: 10px 14px;
+  margin: 8px 0 4px;
+  font-size: 15px;
+}
+.blockcontent p { margin: 0; }
+.blockcontent pre {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: transparent;
+}
