@@ -19,6 +19,7 @@
   --hl-bg: #f9eced;
   --dot: #a7b0c0;
   --underline: #b9c4da;
+  --link-soft: #34507f;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -41,6 +42,7 @@
     --hl-bg: #3a2228;
     --dot: #5b6477;
     --underline: #475170;
+    --link-soft: #a9c1ea;
   }
   .hero-photo img { filter: brightness(.94); }
   .pub-badges img { opacity: .9; }
@@ -88,7 +90,7 @@ body {
 @media (min-width: 768px) {
   .container {
     width: auto;
-    max-width: 800px;
+    max-width: 900px;
   }
 }
 
@@ -122,7 +124,7 @@ body {
   gap: 36px;
   margin: 10px 0 14px;
 }
-.hero-photo { flex: 0 0 210px; }
+.hero-photo { flex: 0 0 230px; }
 .hero-photo img {
   display: block;
   width: 100%;
@@ -283,7 +285,7 @@ h1, h2, li,
 
 /* ---- quiet links inside running text (About, timeline sub lines) ---- */
 .about a, .tl-sub a {
-  color: var(--text);
+  color: var(--link-soft);
   text-decoration: underline;
   text-decoration-color: var(--underline);
   text-decoration-thickness: 1px;
@@ -292,18 +294,11 @@ h1, h2, li,
 }
 .about a:hover, .tl-sub a:hover { color: var(--link); text-decoration-color: var(--link); }
 
-/* ---- research interests as tags ---- */
-.interests-lead { margin-bottom: 8px; }
-.interest-tags { list-style: none; padding: 0; margin: 0 0 16px; display: flex; flex-wrap: wrap; gap: 8px; }
-.interest-tags li {
-  background: var(--accent-bg);
-  color: var(--link);
-  border-radius: 6px;
-  padding: 4px 12px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.5;
-}
+/* ---- research interests: topic + one-line description ---- */
+.interests-lead { margin-bottom: 6px; }
+.interests { padding-left: 1.3em; margin: 0 0 14px; }
+.interests li { margin-bottom: 5px; text-wrap: pretty; }   /* fill the first line; only avoid a lone last word */
+.interests b { color: var(--text-strong); font-weight: 600; }
 
 /* ---- "CV" in the hero icon row, sized to match the icons ---- */
 .hero-links .hero-cv {
